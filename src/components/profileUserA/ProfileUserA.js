@@ -84,7 +84,7 @@ function ProfileUserA() {
              setColor(snapshot.data().color)
              setUserName (snapshot.data().username)
             })
-        }else {navigate('/')}
+        }else {navigate('/login')}
       },[]);
 
 

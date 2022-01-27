@@ -24,6 +24,7 @@ function App() {
       <Route exact path="/" element={<Start/>}/> 
       <Route path="/feed"element={<Feed/>}/>
       <Route path="/profileusera"element={<ProfileUserA/>}/>
+      <Route path="/login" element={<Start/>}></Route>
     </Routes>
 
    

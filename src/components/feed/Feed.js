@@ -71,7 +71,7 @@ function Feed() {
         return()=>{
           unsuscribeTweets()
         } 
-      } else {navigate('/')}
+      } else {navigate('/login')}
       
     },[]);
     
