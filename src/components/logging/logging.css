@@ -1,0 +1,83 @@
+.superContainerLogging{
+    display: flex;
+}
+
+.loggingContainer{
+    display: block;
+    margin-top: 110px;
+    margin-left: 400px;
+    padding-left: 150px;
+}
+
+.googleButton{
+    border-radius: 5px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.buttonLogging{
+    border-style: none;
+}
+
+.welcomeTittle{
+    color: white;
+    font-size: 30px;
+    font-family: 'Silkscreen';
+    font-weight: bold;
+    margin-bottom: 40px;
+    overflow-wrap: break-word;
+}
+
+.supercontainer{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 280px;
+    padding-top: 100px;
+}
+
+@media (min-width: 280px) and (max-width:768px){
+
+    .superContainerLogging{
+        display: block;
+    }
+
+    .supercontainer{
+        display: block;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .loggingContainer{
+        margin: auto;
+        position: absolute;
+        bottom: 20px;
+        display: block;
+        padding-left: 0px;
+        margin-left: 10px; 
+    }
+
+    .welcomeTittle{
+        color: white;
+        font-size: 15px;
+        font-family: 'Silkscreen';
+        font-weight: bold;
+        text-align: start;
+        padding-left: 40px;
+        margin-bottom: 40px;
+        padding-right: 10px;
+    }
+
+    .googleButton{
+        border-style: none;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 250px;
+        display: block;        
+    }
+
+    .buttonLogging{
+        border-style: none;
+    }
+}

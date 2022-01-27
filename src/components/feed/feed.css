@@ -1,0 +1,282 @@
+
+.header{
+  box-sizing: border-box;
+  display: flex; 
+  justify-content:space-between;
+  height: 65px;
+}
+
+.imgs{
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+.horse{
+  width: 30px;
+  height: 30px;
+  margin-top: 18px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.horsereplay{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.horsewriting{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%
+}
+
+.devs{ 
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.united{
+  width: 50px;
+  height: 50px;
+  margin-top: 13px;
+  margin-right: 50px;
+}
+
+.write{
+  background-color: black;
+  height: 250px;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.writing{
+  height: 140px;
+  width: 30%;
+  margin:auto;
+  padding-left: 10px;
+  padding-bottom: 70px;
+  color:#cab4c9;
+  text-align: start;
+  border-style: none;
+  align-items: center;
+}
+
+.button{
+  border-style: none;
+  margin: auto;
+  align-items: flex-end;
+}
+
+.post{
+  width: 60px;
+  color:black;
+  font-family: 'Silkscreen';
+  font-size: medium;
+  font-weight: bold;
+  background-color: #2F112D;
+  margin-right: 450px;
+}
+
+.post:active{
+  background-color: yellowgreen;
+  color: white;
+}
+
+.characteres{
+  background-color: black;
+  color: red;
+  margin-left: 380px;
+  margin-top: 0; 
+  font-family: 'Silkscreen';
+  font-size:small;
+}
+
+.cardComments{
+  background-color: #2F112D;
+  width: 420px;
+  margin: auto;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.userfeed{
+    width: 30%;
+    margin-left: 20px;
+    font-family: 'Silkscreen';
+    font-weight: bold;
+    font-size: medium;
+    color: #2F112D;
+}
+
+.eraser{
+  margin-left: 200px;
+  width: 15px;
+  height: 15px;
+}
+
+.commentsfeed{
+  margin: auto;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow-wrap: break-word;
+}
+
+.love{
+  width:15px;
+  height:15px;
+}
+
+.emptylove{
+  width:15px;
+  height:15px;
+}
+
+.likes{
+  width: 400px;
+  text-align: start;
+}
+
+.borders{
+  border-bottom: 1px solid #cab4c9;
+  width: 420px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 280px) and (max-width:768px){
+
+  .imgs{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 5px;
+  }
+
+  .devs{ 
+    margin-top: 10px;
+    width: 70px;
+    height: 50px;
+  }
+  
+  .united{
+    width: 70px;
+    height: 50px;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  .header{
+    justify-content:center;
+  }
+
+  .horse{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+
+  .horsewriting{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -20px;
+    margin-bottom: 100px;
+  }
+
+  .write{
+    background-color: black;
+    height: 230px;
+    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .writing{
+    height: 140px;
+    width: 250px;
+    margin:auto;
+    padding-left: 0px;
+    padding-bottom: 70px;
+    margin-left: 10px;
+    margin-right: 0px;
+    color:#cab4c9;
+    text-align: start;
+    border-style: none;
+  }
+
+  .characteres{
+    background-color: black;
+    color: red;
+    margin-left: 200px;
+    margin-top: 0; 
+    font-family: 'Silkscreen';
+    font-size:small;
+  }
+
+  .button{
+    border-style: none;
+    margin: auto;
+    align-items: flex-end;
+  }
+  
+  .post{
+    width: 60px;
+    color:black;
+    font-family: 'Silkscreen';
+    font-size: medium;
+    font-weight: bold;
+    background-color: #2F112D;
+    margin-right: 50px;
+  }
+
+  .cardComments{
+    background-color: #2F112D;
+    margin: auto;
+    width: 300px;
+    font-size: 10px;
+    align-items: center;
+  }
+
+  .userfeed{
+    width: 20%;
+    margin-left: 20px;
+    font-family: 'Silkscreen';
+    font-weight: bold;
+    font-size: medium;
+    color: #2F112D;
+  }
+
+  .eraser{
+    margin:auto;
+    margin-left: 50px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .commentsfeed{
+    margin: auto;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+  }
+
+  .borders{
+    border-bottom: 1px solid #cab4c9;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .likes{
+      width: 300px;
+      text-align: start;
+    }
+}
