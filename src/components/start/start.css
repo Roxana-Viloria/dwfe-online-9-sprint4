@@ -16,8 +16,8 @@
 @media (min-width: 280px) and (max-width:768px){
 
     .logo{
-        width: 280px;
-        height: 280px;
+        width: 250px;
+        height: 250px;
         margin: auto;
         position: inherit;
     }
