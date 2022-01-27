@@ -49,7 +49,6 @@ function Feed() {
             console.error("Sucedio un error");
           }
         );
-        console.log(tweets)
         setComments(tweets);
       },
       (error) => {

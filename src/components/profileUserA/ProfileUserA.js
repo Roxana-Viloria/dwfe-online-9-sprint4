@@ -51,7 +51,6 @@ function ProfileUserA() {
     const handleFavorite = async () => {
         setIsDark (!isDark) 
         const likes = await firestore.collection('likes').where("userId", "==", user.uid).get()
-        console.log (likes.docs)
         const newComments = await Promise.all ( 
             likes.docs.map(async (doc)=>{ 
                 const commentId = doc.data().commentId
@@ -62,11 +61,8 @@ function ProfileUserA() {
                     ...otherComment.data(),id:otherComment.id
                 }
             })
-
         )
-        console.log (newComments)
         setComments (newComments)
-        
     }
 
     let user = getCurrentUser()

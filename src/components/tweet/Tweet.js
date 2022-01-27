@@ -62,7 +62,6 @@ function Tweet({comment}){
       
 
       const handleLike = async () => {
-        console.log(comment.id)
         firestore
           .doc(`comments/${comment.id}`)
           .update({ likes: liked ? likes - 1 : likes + 1 });
@@ -80,7 +79,7 @@ function Tweet({comment}){
 
 
       const commentDate = (date) => {
-        const tweetDate = new Date(date)
+      const tweetDate = new Date(date)
 
         return `${tweetDate.getDate()} ${month[tweetDate.getMonth()]}`
       }

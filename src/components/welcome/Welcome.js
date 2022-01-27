@@ -21,8 +21,6 @@ function Welcome() {
   const [color, setColor]= useState ("")
   const [loading, setLoading]= useState (false)
 
- 
-
   const userChange =(e)=>{
     setUserName (e.target.value)
   }
