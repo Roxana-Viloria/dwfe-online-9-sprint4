@@ -1,4 +1,6 @@
 import './welcome.css';
+import '../../App.css';
+
 
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -10,29 +12,35 @@ import welcomeName from '../../pictures/welcomeName.svg';
 
 
 
+
 function Welcome() {
   let user = getCurrentUser()
   let navigate =useNavigate();
 
   const [ userName, setUserName]= useState ("")
   const [color, setColor]= useState ("")
+  const [loading, setLoading]= useState (false)
+
+ 
 
   const userChange =(e)=>{
     setUserName (e.target.value)
   }
 
- 
   const colorChange =(e)=>{
     setColor (e.currentTarget.dataset.color)
   }
 
   const continueClick = (e)=>{
-    firestore
-    .collection('users')
-    .doc(user.uid)
-    .set({name: user.displayName, email: user.email, username: userName, color: color})
-    
-    navigate('/feed')
+    setLoading (true)
+    setTimeout (function (){
+        firestore
+      .collection('users')
+      .doc(user.uid)
+      .set({name: user.displayName, email: user.email, username: userName, color: color})
+      setLoading (false)
+      navigate('/feed')
+      },2000)
   }
 
 
@@ -42,6 +50,7 @@ function Welcome() {
         <div>
           <img src={logo} className="logo"></img>
         </div>
+        {loading ?  <div  className="loader"></div> : 
         <div className="welcomeContainer">
           <div>
           <img src={welcomeName} className="welcome"></img>
@@ -81,6 +90,7 @@ function Welcome() {
             <span className="beta">BETA</span>
           </div>
         </div>
+        }
       </div> 
     </>
   );
